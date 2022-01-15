@@ -139,7 +139,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 .latest-feedback, .giving-feedback{
-    width: 500px;
+    width: 90%;
     height: 380px;
     margin: 0 auto;
     padding: 20px;
@@ -247,6 +247,12 @@ form> p, fieldset{
     #nav-bar:checked ~ .menu-item{
         transform: translateY(0);
     }
+    .latest-feedback, .giving-feedback{
+        width: 80%;
+    }
+    .see-more{
+        margin-left: 70%;
+    }
     
 }
 @media (max-width: 750px){
@@ -263,8 +269,6 @@ form> p, fieldset{
     .products{
         grid-template-columns: 1fr;
     }
-    .see-more{
-        margin-left: 500px;
-    }
+    
 
 }
