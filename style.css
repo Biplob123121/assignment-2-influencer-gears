@@ -203,6 +203,15 @@ form> p, fieldset{
     padding: 0px 15px;
     font-size: 25px;
 }
+
+/***********For nav Bar**********/
+#nav-bar{
+    display: none;
+}
+.nav-bar-icon{
+    display: none;
+}
+
 /****************************************************
           Media Query
 *****************************************************/
@@ -217,6 +226,26 @@ form> p, fieldset{
     }
     .giving-feedback{
         margin-top: 30px;
+    }
+    .nav-bar-icon{
+        display: block;
+    }
+    .menu-item{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: gray;
+        padding: 15px 0px;
+        transform: translateY(-500px);
+    }
+    .menu-item li a{
+        color: white;
+    }
+    #nav-bar:checked ~ .menu-item{
+        transform: translateY(0);
     }
     
 }
@@ -237,4 +266,5 @@ form> p, fieldset{
     .see-more{
         margin-left: 500px;
     }
+
 }
