@@ -248,10 +248,14 @@ form> p, fieldset{
         transform: translateY(0);
     }
     .latest-feedback, .giving-feedback{
-        width: 80%;
+        width: 70%;
+        height: 100%;
     }
     .see-more{
         margin-left: 70%;
+    }
+    fieldset{
+        width: 200px;
     }
     
 }
